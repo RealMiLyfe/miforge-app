@@ -12,10 +12,7 @@ import {
   Gift, 
   Store, 
   Award, 
-  Layers, 
   Coins, 
-  Check, 
-  CreditCard,
   UserCheck
 } from 'lucide-react';
 
@@ -47,7 +44,7 @@ export default function LandingPage() {
       <header className="border-b border-slate-200 bg-white/95 backdrop-blur sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <a href="/" className="text-xl font-black tracking-tight text-slate-900 flex items-center gap-1.5">
+            <a href="/" className="text-xl font-black tracking-tight text-slate-950 flex items-center gap-1.5">
               <span className="p-1.5 bg-emerald-600 rounded-lg text-white">
                 <Zap className="h-4 w-4 fill-white" />
               </span>
@@ -62,12 +59,15 @@ export default function LandingPage() {
             <a href="https://mijaxx.fun" target="_blank" rel="noreferrer" className="text-slate-600 hover:text-slate-900 hidden sm:inline">
               MiJaxx Hub
             </a>
+            <a href="/status" className="text-slate-600 hover:text-slate-900 hidden sm:inline">
+              Status
+            </a>
             <a href="/login" className="text-slate-600 hover:text-slate-900 flex items-center gap-1">
-              <UserCheck className="w-4 h-4" /> Member Login
+              <UserCheck className="w-4 h-4" /> Login
             </a>
             <a 
               href="#pricing" 
-              className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded-lg transition-all shadow-sm shadow-emerald-600/20 text-xs sm:text-sm"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded-lg transition-all shadow-sm text-xs sm:text-sm"
             >
               Join Founding Cohort
             </a>
@@ -79,7 +79,7 @@ export default function LandingPage() {
       <section className="px-4 pt-14 pb-16 max-w-5xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-300 text-amber-900 text-xs sm:text-sm px-4 py-1.5 rounded-full mb-6 font-semibold shadow-sm">
           <Flame className="w-4 h-4 text-amber-600 animate-bounce" />
-          First 200 Pro & First 1,000 Daily Members Pay $0 Net in the End
+          First 200 Pro &amp; First 1,000 Daily Members Pay $0 Net in the End
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-950 leading-[1.1] mb-6">
@@ -128,7 +128,7 @@ export default function LandingPage() {
             Claim Your Founding Spot <ArrowRight className="w-5 h-5" />
           </a>
           <a href="#circular-economy" className="w-full sm:w-auto bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold px-6 py-4 rounded-xl transition-all shadow-sm">
-            See How $MLY Makes You Whole →
+            See How $MLY Makes You Whole &rarr;
           </a>
         </div>
       </section>
@@ -154,7 +154,7 @@ export default function LandingPage() {
                   <span className="text-5xl font-black text-slate-950">$39</span>
                   <span className="text-slate-600 font-medium"> / year</span>
                   <div className="mt-2 text-xs font-bold text-emerald-700 bg-emerald-100/80 px-3 py-1.5 rounded-lg inline-block">
-                    +39 $MLY on signup & renewal (Net Cost: $0)
+                    +39 $MLY on signup &amp; renewal (Net Cost: $0)
                   </div>
                 </div>
 
@@ -165,7 +165,7 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>Invoice & Collections Pulse:</strong> Instant overdue account alerts</span>
+                    <span><strong>Invoice &amp; Collections Pulse:</strong> Instant overdue account alerts</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
@@ -205,7 +205,7 @@ export default function LandingPage() {
                   <span className="text-5xl font-black text-slate-950">$99</span>
                   <span className="text-slate-600 font-medium"> / year</span>
                   <div className="mt-2 text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1.5 rounded-lg inline-block">
-                    +99 $MLY on signup & renewal (Net Cost: $0)
+                    +99 $MLY on signup &amp; renewal (Net Cost: $0)
                   </div>
                 </div>
 
@@ -216,7 +216,7 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>Bank Sync & Categorization:</strong> Real-time Profit & Loss</span>
+                    <span><strong>Bank Sync &amp; Categorization:</strong> Real-time Profit &amp; Loss</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
@@ -245,21 +245,20 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 🔄 SECTION 3: THE $MLY CIRCULAR ECONOMY & VISUAL DIAGRAM */}
+      {/* 🔄 SECTION 3: CIRCULAR ECONOMY */}
       <section id="circular-economy" className="py-20 px-4 max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-emerald-700 font-bold text-xs uppercase tracking-widest bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
             The Circular Economy
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 mt-3 mb-3">
-            "We Give You Your Money Back."
+            &ldquo;We Give You Your Money Back.&rdquo;
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Not as cash out of pocket — better. 1 $MLY = $1 USD value within the MiLyfe community network.
+            Not as cash out of pocket &mdash; better. 1 $MLY = $1 USD value within the MiLyfe community network.
           </p>
         </div>
 
-        {/* Visual Diagram Block */}
         <div className="bg-white border-2 border-slate-200 rounded-3xl p-8 mb-12 shadow-sm">
           <h3 className="text-center font-bold text-slate-900 mb-8 text-lg">The 100% Circulating Flow</h3>
           
@@ -270,7 +269,7 @@ export default function LandingPage() {
               <div className="text-xs text-slate-500 mt-1">Pay $39 or $99</div>
             </div>
 
-            <div className="hidden md:flex justify-center text-emerald-600 font-bold">→</div>
+            <div className="hidden md:flex justify-center text-emerald-600 font-bold">&rarr;</div>
 
             <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-2xl">
               <div className="w-8 h-8 bg-emerald-600 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-2">2</div>
@@ -278,7 +277,7 @@ export default function LandingPage() {
               <div className="text-xs text-emerald-700 mt-1">Get 39 or 99 $MLY</div>
             </div>
 
-            <div className="hidden md:flex justify-center text-emerald-600 font-bold">→</div>
+            <div className="hidden md:flex justify-center text-emerald-600 font-bold">&rarr;</div>
 
             <div className="bg-slate-50 border border-slate-200 p-4 rounded-2xl">
               <div className="w-8 h-8 bg-cyan-100 text-cyan-700 font-bold rounded-full flex items-center justify-center mx-auto mb-2">3</div>
@@ -289,12 +288,12 @@ export default function LandingPage() {
 
           <div className="mt-6 bg-slate-900 text-white p-4 rounded-2xl text-center text-xs sm:text-sm font-medium flex items-center justify-center gap-2">
             <RotateCw className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span>Local businesses earn 5%–15% bonus on received $MLY → circulate back to you. Capital stays in the community.</span>
+            <span>Local businesses earn 5%–15% bonus on received $MLY &rarr; circulate back to you. Capital stays in the community.</span>
           </div>
         </div>
       </section>
 
-      {/* 📊 SECTION 4: WHAT THE DAILY REPORT LOOKS LIKE */}
+      {/* 📊 SECTION 4: PREVIEW */}
       <section className="py-20 px-4 bg-slate-100 border-y border-slate-200">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
@@ -333,7 +332,7 @@ export default function LandingPage() {
               <div className="text-slate-950 font-bold mb-2 flex items-center gap-2">
                 <Zap className="w-4 h-4 text-emerald-600" /> AI Priority Actions:
               </div>
-              <div>• 1. Sent 1-click overdue reminder for Invoice #1084 ($1,200 — 4 days past due).</div>
+              <div>• 1. Sent 1-click overdue reminder for Invoice #1084 ($1,200 &mdash; 4 days past due).</div>
               <div>• 2. Auto-categorized $340 hardware expense as Section 179 tax deduction.</div>
               <div>• 3. Streak Status: Day 42/261 active. Next milestone bonus in 8 days (+$25 $MLY).</div>
             </div>
@@ -341,7 +340,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 🎁 SECTION 5: $300 GIFT CHALLENGE & STREAK TIERS */}
+      {/* 🎁 SECTION 5: GIFT CHALLENGE */}
       <section className="py-20 px-4 max-w-5xl mx-auto">
         <div className="bg-gradient-to-br from-emerald-600 to-teal-700 text-white rounded-3xl p-8 sm:p-12 shadow-xl">
           <div className="max-w-2xl">
@@ -353,7 +352,7 @@ export default function LandingPage() {
             </h2>
             <p className="text-emerald-50 text-sm sm:text-base leading-relaxed mb-8">
               Open your 7:00 AM daily financial report every business day for one year. 
-              A Daily member pays $39, gets $39 match on signup + $300 in challenge credits = <strong>$339 total back (8.7× return)</strong>.
+              A Daily member pays $39, gets $39 match on signup + $300 in challenge credits = <strong>$339 total back (8.7&times; return)</strong>.
             </p>
           </div>
 
@@ -382,7 +381,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 🏢 SECTION 6: BUSINESS $MLY ACCEPTANCE REWARDS */}
+      {/* 🏢 SECTION 6: BUSINESS ACCEPTANCE */}
       <section className="py-20 px-4 bg-white border-y border-slate-200">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
@@ -445,30 +444,30 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 🏛️ SECTION 7: THE MILYFE & MIJAXX CONNECTION */}
+      {/* 🏛️ SECTION 7: MILYFE / MIJAXX */}
       <section className="py-20 px-4 max-w-4xl mx-auto text-center">
         <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold">
           <Building2 className="w-6 h-6" />
         </div>
         <h2 className="text-3xl font-extrabold text-slate-950 mb-4">
-          This Isn't Just Software. It's a Community Economy.
+          This Isn&apos;t Just Software. It&apos;s a Community Economy.
         </h2>
         <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-          MiForge is built inside <strong>MiLyfe</strong> — starting in Jacksonville, FL through the <strong>MiJaxx</strong> mayoral initiative.
+          MiForge is built inside <strong>MiLyfe</strong> &mdash; starting in Jacksonville, FL through the <strong>MiJaxx</strong> mayoral initiative.
           We believe communities should own and circulate their economic power before relying on outside promises.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a href="https://milyfe.fun" target="_blank" rel="noreferrer" className="bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-all shadow">
-            Learn About MiLyfe →
+            Learn About MiLyfe &rarr;
           </a>
           <a href="https://mijaxx.fun" target="_blank" rel="noreferrer" className="bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 text-sm font-semibold px-6 py-3 rounded-xl transition-all">
-            Explore MiJaxx Mayor Movement →
+            Explore MiJaxx Mayor Movement &rarr;
           </a>
         </div>
       </section>
 
-      {/* 💳 SECTION 8: CHECKOUT & PAYMENT METHODS */}
+      {/* 💳 SECTION 8: CHECKOUT METHODS */}
       <section className="py-16 px-4 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold mb-3">Instant Activation. Flexible Payment.</h3>
@@ -494,10 +493,11 @@ export default function LandingPage() {
         <div className="flex justify-center space-x-6 font-medium text-slate-700">
           <a href="https://milyfe.fun" className="hover:text-emerald-600">MiLyfe Platform</a>
           <a href="https://mijaxx.fun" className="hover:text-emerald-600">MiJaxx Jacksonville</a>
+          <a href="/status" className="hover:text-emerald-600">System Status</a>
           <a href="/login" className="hover:text-emerald-600">Member Login</a>
           <a href="mailto:support@milyfe.fun" className="hover:text-emerald-600">support@milyfe.fun</a>
         </div>
-        <p>© {new Date().getFullYear()} MiForge — A MiLyfe Product. Jacksonville, FL & Open Worldwide.</p>
+        <p>&copy; {new Date().getFullYear()} MiForge &mdash; A MiLyfe Product. Jacksonville, FL &amp; Open Worldwide.</p>
       </footer>
 
     </div>
